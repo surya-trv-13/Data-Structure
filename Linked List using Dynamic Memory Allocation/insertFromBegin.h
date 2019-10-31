@@ -4,7 +4,7 @@
 #include<stdlib.h>
 #include "Structure.h"
 
-insertAtBegin(){
+void insertAtBegin(){
     struct LinkedList *node;
     node = (struct LinkedList *)malloc(sizeof(struct LinkedList));
     printf("\n Enter the Info :");
