@@ -5,6 +5,7 @@
 #include "insertFromBegin.h"
 #include "insertFromEnding.h"
 #include "insertSpecificLocation.h"
+#include "insertAfterSpecificNode.h"
 
 void main(){
     int choice;
@@ -13,7 +14,7 @@ void main(){
 
     createList();
     do{
-        printf("\nEnter your choice: \n\n\t1. Insert at Beginning \n\t2. Insert at End \n\t3. Insert at any specific location \n\t4. Show the List\n\t Response:");
+        printf("\nEnter your choice: \n\n\t1. Insert at Beginning \n\t2. Insert at End \n\t3. Insert at any specific location \n\t4. Insert After Specific node \n\t5. Show the List\n\t Response:");
         scanf("%d",&choice);
         switch(choice){
         case 1:
@@ -28,6 +29,9 @@ void main(){
             insertAtposition(position);
             break;
         case 4:
+            insertAfterNode();
+            break;
+        case 5:
             showList();
             break;
         default :
@@ -36,8 +40,6 @@ void main(){
         }
         printf("\n Do you want to perform more transactions ?");
         scanf(" %c",&wantMore);
-        printf("%c",wantMore);
-
-    }while(wantMore!='n' || wantMore!='N');
+    }while(wantMore!='n');
     showList();
 }
