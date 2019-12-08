@@ -6,6 +6,7 @@
 #include "insertFromEnding.h"
 #include "insertSpecificLocation.h"
 #include "insertAfterSpecificNode.h"
+#include "DeleteFromBegining.h"
 
 void main(){
     int choice;
@@ -14,7 +15,13 @@ void main(){
 
     createList();
     do{
-        printf("\nEnter your choice: \n\n\t1. Insert at Beginning \n\t2. Insert at End \n\t3. Insert at any specific location \n\t4. Insert After Specific node \n\t5. Show the List\n\t Response:");
+        printf("\nEnter your choice:"
+               "\n\n\t1. Insert at Beginning"
+               "\n\t2. Insert at End"
+               "\n\t3. Insert at any specific location"
+               "\n\t4. Insert After Specific node"
+               "\n\t5. Show the List\n\t Response:"
+               "\n\t6. Delete from the beginning");
         scanf("%d",&choice);
         switch(choice){
         case 1:
@@ -33,6 +40,9 @@ void main(){
             break;
         case 5:
             showList();
+            break;
+        case 6:
+            deleteFromBegining();
             break;
         default :
             printf("\n Enter a valid choice :");
