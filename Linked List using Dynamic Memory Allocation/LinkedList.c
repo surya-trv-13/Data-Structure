@@ -8,6 +8,7 @@
 #include "insertAfterSpecificNode.h"
 #include "DeleteFromBegining.h"
 #include "DeleteFromEnd.h"
+#include "DeleteAtSpecificNode.h"
 
 void main(){
     int choice;
@@ -23,7 +24,8 @@ void main(){
                "\n\t4. Insert After Specific node"
                "\n\t5. Delete from the Beginning"
                "\n\t6. Delete from the End"
-               "\n\t7. Show the List\n\t Response:"
+               "\n\t7. Delete At Specific Node"
+               "\n\t8. Show the List\n\t Response:"
                );
         scanf("%d",&choice);
         switch(choice){
@@ -41,7 +43,7 @@ void main(){
         case 4:
             insertAfterNode();
             break;
-        case 7:
+        case 8:
             showList();
             break;
         case 5:
@@ -49,6 +51,11 @@ void main(){
             break;
         case 6:
             deleteFromEnd();
+            break;
+        case 7:
+            printf("\n Enter the position you want to delete the node :");
+            scanf("%d", &position);
+            deleteSpecificNode(position);
             break;
         default :
             printf("\n Enter a valid choice :");

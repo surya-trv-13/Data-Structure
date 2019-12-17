@@ -2,6 +2,7 @@
 #define INSERTSPECIFICLOCATION_H_INCLUDED
 #include<stdio.h>
 #include"Structure.h"
+#include"CountNodes.h"
 
 void insertAtposition(int n){
     int c = countNodes(start);
@@ -23,14 +24,6 @@ void insertAtposition(int n){
         printf("\n The position exceeds the length of the array !");
         return;
     }
-}
-int countNodes(struct LinkedList *node){
-    int c = 1;
-    while(node->next != NULL){
-        node = node->next;
-        c++;
-    }
-    return c;
 }
 
 #endif // INSERTSPECIFICLOCATION_H_INCLUDED
