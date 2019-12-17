@@ -10,57 +10,62 @@
 #include "DeleteFromEnd.h"
 #include "DeleteAtSpecificNode.h"
 #include "DeleteAtSpecificLocation.h"
+#include "sortingList.h"
 
 void main(){
-    int choice;
+    char choice;
     int position; //for inserting at specific location in Linked List
     char wantMore;
 
     createList();
     do{
         printf("\nEnter your choice:"
-               "\n\n\t1. Insert at Beginning"
-               "\n\t2. Insert at End"
-               "\n\t3. Insert at any specific location"
-               "\n\t4. Insert After Specific node"
-               "\n\t5. Delete from the Beginning"
-               "\n\t6. Delete from the End"
-               "\n\t7. Delete At Specific Location"
-               "\n\t8. Delete At Specific Node"
-               "\n\t9. Show the List\n\t Response:"
+               "\n\n\tA. Insert at Beginning"
+               "\n\tB. Insert at End"
+               "\n\tC. Insert at any specific location"
+               "\n\tD. Insert After Specific node"
+               "\n\tE. Delete from the Beginning"
+               "\n\tF. Delete from the End"
+               "\n\tG. Delete At Specific Location"
+               "\n\tH. Delete At Specific Node"
+               "\n\tI. Sort the LinkedList"
+               "\n\tJ. Show the List\n\t Response:"
                );
-        scanf("%d",&choice);
+        scanf("\n%c",&choice);
         switch(choice){
-        case 1:
+        case 'A':
             insertAtBegin();
             break;
-        case 2:
+        case 'B':
             insertAtEnding();
             break;
-        case 3:
+        case 'C':
             printf("\n Enter the position you want to enter the node : ");
             scanf("%d",&position);
             insertAtposition(position);
             break;
-        case 4:
+        case 'D':
             insertAfterNode();
             break;
-        case 9:
+        case 'J':
             showList();
             break;
-        case 5:
+        case 'E':
             deleteFromBegining();
             break;
-        case 6:
+        case 'F':
             deleteFromEnd();
             break;
-        case 7:
+        case 'G':
             printf("\n Enter the position you want to delete the node :");
             scanf("%d", &position);
             deleteSpecificLocation(position);
             break;
-        case 8:
+        case 'H':
             deleteAtSpecificNode();
+            break;
+        case 'I':
+            sorting();
             break;
         default :
             printf("\n Enter a valid choice :");
