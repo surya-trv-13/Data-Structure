@@ -9,6 +9,7 @@
 #include "DeleteFromBegining.h"
 #include "DeleteFromEnd.h"
 #include "DeleteAtSpecificNode.h"
+#include "DeleteAtSpecificLocation.h"
 
 void main(){
     int choice;
@@ -24,8 +25,9 @@ void main(){
                "\n\t4. Insert After Specific node"
                "\n\t5. Delete from the Beginning"
                "\n\t6. Delete from the End"
-               "\n\t7. Delete At Specific Node"
-               "\n\t8. Show the List\n\t Response:"
+               "\n\t7. Delete At Specific Location"
+               "\n\t8. Delete At Specific Node"
+               "\n\t9. Show the List\n\t Response:"
                );
         scanf("%d",&choice);
         switch(choice){
@@ -43,7 +45,7 @@ void main(){
         case 4:
             insertAfterNode();
             break;
-        case 8:
+        case 9:
             showList();
             break;
         case 5:
@@ -55,7 +57,10 @@ void main(){
         case 7:
             printf("\n Enter the position you want to delete the node :");
             scanf("%d", &position);
-            deleteSpecificNode(position);
+            deleteSpecificLocation(position);
+            break;
+        case 8:
+            deleteAtSpecificNode();
             break;
         default :
             printf("\n Enter a valid choice :");

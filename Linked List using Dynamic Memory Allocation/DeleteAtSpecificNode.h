@@ -4,24 +4,30 @@
 #include"Structure.h"
 #include"CountNodes.h"
 
-void deleteSpecificNode(int position){
-    int c = countNodes(start);
-    int i = 0;
-    if(c >= position){
-        struct LinkedList *node = start, *temporary;
-        for(i = 1 ; i < position-1 ; i++ ){
+void deleteAtSpecificNode(){
+    int value;
+    struct LinkedList *node = start->next ,*previous = start;
+
+    //Asking for the value
+    printf("\n Enter the Value you want to delete :");
+    scanf("%d", &value);
+
+    if(value == start->info){
+        start = node;
+        free(previous);
+    }else{
+        while(node->next != NULL && node->info != value){
+            previous = node;
             node = node->next;
         }
-        temporary = node->next;
-        node-> next = temporary-> next;
-        free(temporary);
-        return;
-    }else if(start == NULL || c < position){
-        printf("\n The position exceeds the length of the array !");
+    }
+    if(node == NULL){
+        printf("\n Value can't found in the linked list");
         return;
     }
+    previous->next = node->next;
+    free(node);
+    return;
 }
-
-
 
 #endif // DELETEATSPECIFICNODE_H_INCLUDED
