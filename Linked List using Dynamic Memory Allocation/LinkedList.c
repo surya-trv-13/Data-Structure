@@ -11,6 +11,7 @@
 #include "DeleteAtSpecificNode.h"
 #include "DeleteAtSpecificLocation.h"
 #include "sortingList.h"
+#include "ReversingList.h"
 
 void main(){
     char choice;
@@ -29,7 +30,8 @@ void main(){
                "\n\tG. Delete At Specific Location"
                "\n\tH. Delete At Specific Node"
                "\n\tI. Sort the LinkedList"
-               "\n\tJ. Show the List\n\t Response:"
+               "\n\tJ. Reverse the LinkedList"
+               "\n\tK. Show the List\n\t Response:"
                );
         scanf("\n%c",&choice);
         switch(choice){
@@ -47,7 +49,7 @@ void main(){
         case 'D':
             insertAfterNode();
             break;
-        case 'J':
+        case 'K':
             showList();
             break;
         case 'E':
@@ -66,6 +68,9 @@ void main(){
             break;
         case 'I':
             sorting();
+            break;
+        case 'J':
+            reverseList();
             break;
         default :
             printf("\n Enter a valid choice :");

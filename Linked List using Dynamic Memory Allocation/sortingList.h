@@ -17,6 +17,12 @@ void sorting(){
             }
             checker = checker->next;
         }
+        //Managing the corner case
+        if(checker->info < node->info){
+            temporary = checker->info;
+            checker->info = node->info;
+            node->info = temporary;
+        }
         node = node->next;
     }
     return;

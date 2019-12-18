@@ -7,15 +7,16 @@
 void showList(){
     struct LinkedList *node;
     node = start;
-
-    printf("\n LinkedList is as follow:\n\n start ");
-    while(node != NULL){
-        if(start == NULL){
-            printf("\n UnderFlow!");
-        }else{
-        printf("--> %d ",node->info);
-        node = node->next;
+    if(start == NULL){
+        printf("\n UnderFlow!");
+        return;
+    }else{
+        printf("\n LinkedList is as follow:\n\n start ");
+        while(node != NULL){
+            printf("--> %d ",node->info);
+            node = node->next;
         }
+        printf("--> NULL");
     }
 }
 
