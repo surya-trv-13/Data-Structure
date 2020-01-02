@@ -5,9 +5,15 @@
 
 void showList(){
     struct DoublyLinkedList *node = start;
-    while(node != NULL){
-        printf("--> %d",node->info);
-        node = node->next;
+    if(start == NULL){
+        printf("\n UnderFlow!!");
+        return;
+    }else{
+        printf("\nDouble Linked List is as follows :");
+        while(node != NULL){
+            printf("--> %d <",node->info);
+            node = node->next;
+        }
     }
 }
 

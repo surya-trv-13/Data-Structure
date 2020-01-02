@@ -3,6 +3,7 @@
 #include "Structure.h"
 #include "ShowList.h"
 #include "createList.h"
+#include "insertAtBeginning.h"
 
 void main(){
         int choice;
@@ -10,11 +11,15 @@ void main(){
         createList();
         do{
             printf("\n\t Enter you Choice :"
-                "\n\t\t1. Show the List\n\tResponse :");
+                "\n\t\t1. Show the List"
+                "\n\t\t2. Insert At the Beginning\n\tResponse :");
             scanf("%d",&choice);
             switch(choice){
                 case 1:
                     showList();
+                    break;
+                case 2:
+                    insertFront();
                     break;
                 default:
                     printf("\n\t Enter a valid choice !");
@@ -23,5 +28,4 @@ void main(){
             printf("\n\t Enter Any key to do more operation (Press n to exit): ");
             scanf("\n%c",&want);
         }while(want != 'N' || want != 'n');
-        exit();
 }
