@@ -15,6 +15,7 @@ void insertFront(){
         printf("\n\tEnter the node :");
         scanf("%d",&node->info);
         node->next = start;
+        node->prev = NULL;
         start->prev = node;
         start = node;
     }
