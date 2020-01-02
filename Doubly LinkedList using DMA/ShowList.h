@@ -7,13 +7,15 @@ void showList(){
     struct DoublyLinkedList *node = start;
     if(start == NULL){
         printf("\n UnderFlow!!");
+        printf("\n");
         return;
     }else{
-        printf("\nDouble Linked List is as follows :");
+        printf("\n\tDouble Linked List is as follows : ");
         while(node != NULL){
             printf("--> %d <",node->info);
             node = node->next;
         }
+        printf("\n");
     }
 }
 

@@ -4,9 +4,9 @@ struct DoublyLinkedList {
      struct DoublyLinkedList *prev;
      int info;
      struct DoublyLinkedList *next;
-}*start;
+};
 
-struct DoublyLinkedList *start = NULL;
+static struct DoublyLinkedList *start = NULL;
 
 
 #endif // STRUCTURE_H_INCLUDED
