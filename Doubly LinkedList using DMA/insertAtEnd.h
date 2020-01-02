@@ -11,12 +11,18 @@ void insertBack(){
     if(node == NULL){
         printf("\n OverFlow !");
         return;
+    }else if(start == NULL){
+            printf("\n\tEnter the node  :");
+            scanf("%d",&node->info);
+            node->prev = NULL;
+            node->next = NULL;
+            start = node;
     }else{
         current = start;
         while(current->next != NULL){
             current = current->next;
         }
-        printf("\nEnter the node :");
+        printf("\n\tEnter the node :");
         scanf("%d",&node->info);
         current->next = node;
         node->prev = current;

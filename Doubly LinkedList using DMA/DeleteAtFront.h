@@ -11,6 +11,7 @@ void deleteFront(){
         return;
     }else if(start->next == NULL){
         free(start);
+        start = NULL;
     }
     else{
         struct DoublyLinkedList *node;

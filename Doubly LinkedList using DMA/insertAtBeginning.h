@@ -11,6 +11,12 @@ void insertFront(){
     if(node == NULL){
         printf("\n OverFlow !");
         return;
+    }else if(start == NULL){
+            printf("\n\tEnter the node  :");
+            scanf("%d",&node->info);
+            node->prev = NULL;
+            node->next = NULL;
+            start = node;
     }else{
         printf("\n\tEnter the node :");
         scanf("%d",&node->info);
