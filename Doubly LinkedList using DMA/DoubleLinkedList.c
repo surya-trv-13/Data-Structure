@@ -7,6 +7,7 @@
 #include "insertAtEnd.h"
 #include "DeleteAtFront.h"
 #include "DeleteAtEnd.h"
+#include "InsertAtSpecific.h"
 
 void main(){
         int choice;
@@ -18,7 +19,8 @@ void main(){
                 "\n\t\t2. Insert at the Beginning"
                 "\n\t\t3. Insert at the End"
                 "\n\t\t4. Delete at the Beginning"
-                "\n\t\t5. Delete at the End\n\tResponse :");
+                "\n\t\t5. Delete at the End"
+                "\n\t\t6. Insert at Specific List\n\tResponse :");
             scanf("%d",&choice);
             switch(choice){
                 case 1:
@@ -35,6 +37,9 @@ void main(){
                     break;
                 case 5:
                     deleteBack();
+                    break;
+                case 6:
+                    insertAtPosition();
                     break;
                 default:
                     printf("\n\t Enter a valid choice !");
