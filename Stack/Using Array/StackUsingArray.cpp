@@ -1,29 +1,29 @@
 #include<iostream>
 #include "ArrayCreation.h"
-#include "IsEmpty.h"
+#include "Peek.h"
+#include "Push.h"
+#include "Pop.h"
 
 using namespace std;
 
 int main(){
-    Stack stac;
     char ch,wish = 'y';
-
 
     do{
         cout<<"\n\tEnter your Choice";
-        cout<<"\n\t\t1. PUSH";
-        cout<<"\n\t\t1. POP";
-        cout<<"\n\t\t1. PEEK";
+        cout<<"\n\t\ta. PUSH";
+        cout<<"\n\t\tb. POP";
+        cout<<"\n\t\tc. PEEK";
         cout<<"\n\n\t\tYour Choice :";
         cin>>ch;
         switch(ch){
-            case 'a' : push();
+            case 'a' : stac.push();
                 break;
-            case 'b' : pop();
+            case 'b' : stac.pop();
                 break;
-            case 'c' : peek();
+            case 'c' : stac.peek();
                 break;
-            default  : cout<<"Enter a Valid Choice :"
+            default  : cout<<"Enter a Valid Choice :";
                 break;
         }
         cout<<"\n\tDo you want to do more operation :";

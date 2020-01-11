@@ -17,5 +17,6 @@ class Stack{
         int isFull();
 };
 
+static Stack stac;
 
 #endif // ARRAYCREATION_H_INCLUDED

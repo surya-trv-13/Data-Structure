@@ -3,7 +3,7 @@
 #include "ArrayCreation.h"
 
 int Stack :: isEmpty(){
-    Stack stac;
+
     if(stac.top == -1){
         return 1;
     }else{

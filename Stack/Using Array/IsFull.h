@@ -3,7 +3,7 @@
 #include "ArrayCreation.h"
 
 int Stack :: isFull(){
-    Stack stac;
+
     if(stac.top == MAX_SIZE){
         return 1;
     }else{
