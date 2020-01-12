@@ -1,0 +1,137 @@
+[33mcommit 361d51143dff237036bb7d1b00237c5e0c6b55ad[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Sat Jan 11 10:34:14 2020 +0530
+
+    Completed the module Stack using Array with Push,Pop and Peek operation
+
+[33mcommit 15916c286a356d457780402ebc7afce48e89ce89[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Fri Jan 10 22:14:11 2020 +0530
+
+    Added Stack using Array and done the needful
+
+[33mcommit ad988f2dc5892c0b8f36630d791045d1c517990a[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Fri Jan 3 13:08:36 2020 +0530
+
+    Added insert at specific location
+
+[33mcommit 6a95ec6800e062253a8624553798e6c48e1a7aa3[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Thu Jan 2 21:38:21 2020 +0530
+
+    Added the Delete From the End in Doubly Linked List and rectified a bug
+
+[33mcommit fe98b481d85eb5a52897c2867c06891e3c7ee8e4[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Thu Jan 2 21:14:17 2020 +0530
+
+    Added the Delete From the End in Doubly Linked List
+
+[33mcommit 191e44c239cffd7ff7411c19ade6de8b1cfdbea0[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Thu Jan 2 13:11:47 2020 +0530
+
+    Added Insert At the End in the DoublyLinkedList
+
+[33mcommit c89a9800de204ca4a3130ebc52037d81a6f4333b[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Thu Jan 2 12:22:58 2020 +0530
+
+    Added the Insert At the Beginning
+
+[33mcommit afb4ca8caf335e473665ba9c5a08d869a3172e53[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Thu Jan 2 11:59:05 2020 +0530
+
+    Added the Showlist in DoublyLinkedList
+
+[33mcommit 683f9a551ca2dd910c9111c6ddb12de6063ac538[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Wed Dec 18 09:43:59 2019 +0530
+
+    Added Reverse of Linked List
+
+[33mcommit 872a8ff3d345642aa09a64f801c41ca2b08b1fea[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Tue Dec 17 20:37:27 2019 +0530
+
+    Added Sorting in the List
+
+[33mcommit 704c1b04169433e4e270ef83abb5afceacdea6a4[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Tue Dec 17 18:33:59 2019 +0530
+
+    Added Delete the specific node
+
+[33mcommit 6ffe4909aa354a60bdbcea476352dbf2cce196b3[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Tue Dec 17 09:15:43 2019 +0530
+
+    Added DeleteAtSpecificLocation in Linked List
+
+[33mcommit 085692650794dc17f99a9e22adf57ea5192bfeb7[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Sun Dec 8 19:52:56 2019 +0530
+
+    Added Delete from the End
+
+[33mcommit 8e72dca887673afb5fe1676935ca2f61a107abe3[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Sun Dec 8 18:05:58 2019 +0530
+
+    Added Delete from the beginning
+
+[33mcommit b92e914e3728791393e87d74c84ff7fbcc9fb697[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Sun Nov 3 16:17:40 2019 +0530
+
+    Added inserting node afetr specific value
+
+[33mcommit 3ffd1dd6c68e0f4093c04466adad5b6491dd58ae[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Sun Nov 3 12:53:18 2019 +0530
+
+    Add insert at any position
+
+[33mcommit 6ed30b77e5367197258fc0c68215e0c03f6656c0[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Thu Oct 31 08:40:42 2019 +0530
+
+    Added insert at end in linked list
+
+[33mcommit f554268063b5b478d33157afb9e9793ae14d8574[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Sun Oct 20 14:38:38 2019 +0530
+
+    Added insertFromBegin in LinkedList
+
+[33mcommit 64ee4dc14c79da45136d2565bd1498a71189722f[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Sun Oct 20 13:46:12 2019 +0530
+
+    Added create and show functions to the LinkedList
+
+[33mcommit 1f372afe769e28019afbd6b2de702f7f0609648e[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Sun Oct 20 13:45:10 2019 +0530
+
+    Added create and show functions to the LinkedList
+
+[33mcommit 15b0f126ed1a0e9a6ad56843ffee6d059dd7cee7[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Wed Oct 9 14:01:44 2019 +0530
+
+    Changes in the Linked List file
+
+[33mcommit 3fbef094e625635dc8c6d6052bc888edd7572cb3[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Wed Oct 9 13:55:32 2019 +0530
+
+    Linked List using Array
+
+[33mcommit 955468c6d95f2d81f6ac8b78278db300b58e3c43[m
+Author: SURYANARAYAN RATH <suryanarayanrath74@gmail.com>
+Date:   Mon Oct 7 17:23:02 2019 +0530
+
+    Initial Commit
