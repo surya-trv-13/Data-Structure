@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include "Structure.h"
-#include "Push.h"
-#include "Pop.h"
+#include "InsertQ.h"
+#include "DeleteQ.h"
 #include "Peek.h"
 
 void main(){

@@ -6,8 +6,5 @@ struct Queue{
     struct Queue *next;
 };
 
-struct Queue *frontSide, *rearSide;
-frontSide =  NULL;
-rearSide = NULL;
-
+static struct Queue *frontSide = NULL, *rearSide = NULL;
 #endif // STRUCTURE_H_INCLUDED
