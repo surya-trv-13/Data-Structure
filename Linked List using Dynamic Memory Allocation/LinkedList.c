@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 #include "Structure.h"
 #include "createLinkedList.h"
 #include "ShowLinkedList.h"
@@ -12,14 +12,23 @@
 #include "DeleteAtSpecificLocation.h"
 #include "sortingList.h"
 #include "ReversingList.h"
+#include "createCircularLinkedList.h"
+#include "ShowCircularList.h"
 
 void main(){
-    char choice;
-    int position; //for inserting at specific location in Linked List
-    char wantMore;
+    int choice1;
+    printf("\n\tEnter the Choice of Linked List :"
+           "\n\t\t1. Linked List"
+           "\n\t\t2. Circular Linked List"
+           "\n\t\t Your Choice : ");
+    scanf("%d", &choice1);
+    if(choice1 == 1){
+        char choice;
+        int position; //for inserting at specific location in Linked List
+        char wantMore;
 
-    createList();
-    do{
+        createList();
+        do{
         printf("\nEnter your choice:"
                "\n\n\tA. Insert at Beginning"
                "\n\tB. Insert at End"
@@ -78,6 +87,31 @@ void main(){
         }
         printf("\n Do you want to perform more transactions ?");
         scanf(" %c",&wantMore);
-    }while(wantMore!='n');
-    showList();
+        }while(wantMore!='n');
+        showList();
+    }else if(choice1 == 2){
+        char choice;
+        char wantMore;
+        createCircularList();
+        printf("\n\tEnter your choice :"
+               "\n\n\t A. Show List"
+               "\n\tYour Choice : ");
+        scanf("\n%c", &choice);
+
+        do{
+            switch(choice){
+                case 'A' :
+                    showCircularList();
+                    break;
+                default :
+                    printf("\n\tEnter a valid choice !");
+                    break;
+            }
+            printf("\n Do you want to perform more transactions ?");
+            scanf("\n%c", &wantMore);
+        }while(wantMore == 'Y' || wantMore == 'y');
+    }else{
+        printf("\nEnter a Valid Choice !!");
+        return;
+    }
 }
