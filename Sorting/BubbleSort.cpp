@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     int sizeOfArray , temporary;
-    cout<<"******BUBBLE SORT*******"
+    cout<<"\t******BUBBLE SORT*******\n";
     cout<<"\tEnter the size of the Array :";
     cin>>sizeOfArray;
     int a[sizeOfArray];
