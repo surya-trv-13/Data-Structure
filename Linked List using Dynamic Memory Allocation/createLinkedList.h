@@ -23,7 +23,7 @@ void createList(){
         }
         node->next = NULL;
 
-        printf("\nEnter 'n' to abort! Press any key to continue!!");
+        printf("\n\tEnter 'n' to abort! Press any key to continue!!");
         scanf(" %c",&ch);
     }while(ch != 'n');
     return;
