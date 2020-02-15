@@ -7,7 +7,7 @@ void inorderTraversal(struct Node *node){
 
     if(node == NULL)
         return;
-
+    printf("\n\t InOrder Traversal :");
     inorderTraversal(node->left);
     printf(" %d" , node->data);
     inorderTraversal(node->right);

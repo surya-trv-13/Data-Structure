@@ -8,6 +8,7 @@ void postorderTraversal(struct Node *node){
     if(node == NULL)
         return;
 
+    printf("\n\t PostOrder Traversal :");
     postorderTraversal(node->left);
     postorderTraversal(node->right);
     printf(" %d", node->data);
