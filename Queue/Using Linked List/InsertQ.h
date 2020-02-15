@@ -16,8 +16,7 @@ void insertQ(){
         rearSide = current;
         current->next = NULL;
     }else{
-        temporary = rearSide;
-        temporary->next = current;
+        rearSide->next = current;
         rearSide = rearSide->next;
     }
 }
