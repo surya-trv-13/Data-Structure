@@ -7,7 +7,6 @@ void preorderTraversal(struct Node *node){
 
     if(node == NULL)
         return;
-    printf("\n\t PreOrder Traversal :");
     printf(" %d" , node->data);
     preorderTraversal(node->left);
     preorderTraversal(node->right);
