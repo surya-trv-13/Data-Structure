@@ -12,7 +12,6 @@ void insertNode(){
     scanf("%d", &node->data);
     node->right = node->left = NULL;
 
-
     if(!node){
         return;
     }else{

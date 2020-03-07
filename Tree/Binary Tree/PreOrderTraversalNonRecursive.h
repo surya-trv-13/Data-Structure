@@ -6,7 +6,6 @@
 
 void PreOrderTraversal(struct Node *node){
     struct Node *root = node;
-    printf("\tPre-Order : ");
     while(1){
         while(root !=  NULL){
             printf("%d " , root->data);

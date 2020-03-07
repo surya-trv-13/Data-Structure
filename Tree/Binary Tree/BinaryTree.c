@@ -5,6 +5,7 @@
 #include "PreOrderTraversal.h"
 #include "PostOrderTraversal.h"
 #include "PreOrderTraversalNonRecursive.h"
+#include "InorderTraversalNonRecursive.h"
 
 void main(){
     char choice;
@@ -43,11 +44,12 @@ void main(){
                     postorderTraversal(root);
                     break;
                 case 7 :
-                    printf("\n\t PreOrder Traversal :");
+                    printf("\n\t PreOrder Traversal (Non - Recursive):");
                     PreOrderTraversal(root);
                     break;
                 case 6 :
-
+                    printf("\n\t InOrder Traversal (Non - Recursive):");
+                    InOrderTraversal(root);
                     break;
                 case 8 :
 

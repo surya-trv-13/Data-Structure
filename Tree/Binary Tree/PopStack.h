@@ -14,7 +14,7 @@ struct Node *pop(){
         top = top->next;
         return temp->node;
     }
-    return;
+    return NULL;
 }
 
 
