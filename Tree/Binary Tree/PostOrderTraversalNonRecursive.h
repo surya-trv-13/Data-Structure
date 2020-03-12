@@ -22,11 +22,11 @@ void PostOrderTraversal(struct Node *node){
         if(root-> right == NULL){
             printf(" %d" , root->data);
             root = root->right;
-        }else if(root->right != NULL && i == 0){
+        }else if(root->right != NULL && flag == 0){
             push(root);
             root = root->right;
             flag = 1;
-        }else if(root->right != NULL && i == 1){
+        }else if(root->right != NULL && flag == 1){
             printf(" %d", root->data);
             root = NULL;
             flag = 0;

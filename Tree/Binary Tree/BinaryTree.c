@@ -7,9 +7,11 @@
 #include "PreOrderTraversalNonRecursive.h"
 #include "PostOrderTraversalNonRecursive.h"
 #include "InorderTraversalNonRecursive.h"
+#include "Searching.h"
 
 void main(){
     char choice;
+    int searchReturn;
     printf("\n\t******** Binary Tree ********");
     createTree();
 
@@ -55,6 +57,14 @@ void main(){
                 case 8 :
                     printf("\n\t PostOrder Traversal (Non - Recursive):");
                     PostOrderTraversal(root);
+                    break;
+                case 9 :
+                    searchReturn = SearchingNode(root);
+                    if(searchReturn == 1){
+                        printf("\n\tSearch Successful !!");
+                    }else{
+                        printf("\n\tSearch UnsucessFul !!");
+                    }
                     break;
                 default :
                     printf("\n\tEnter a Valid Option :");
