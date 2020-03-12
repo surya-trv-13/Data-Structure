@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "Structure.h"
 
-void inorderTraversal(struct Node *node){
+void inorderTraversal(struct BST *node){
 
     if(node == NULL)
         return;
@@ -11,6 +11,7 @@ void inorderTraversal(struct Node *node){
     printf(" %d" , node->data);
     inorderTraversal(node->right);
 }
+
 
 
 #endif // INORDERTRAVERSAL_H_INCLUDED

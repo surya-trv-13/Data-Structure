@@ -1,28 +1,33 @@
 #ifndef INSERTNODE_H_INCLUDED
 #define INSERTNODE_H_INCLUDED
+#include "Structure.h"
+#include <stdlib.h>
 
-void insertNode(struct BST *root , int data){
+void insertNode(struct BST *root){
     struct BST *node = malloc(sizeof(struct BST));
-    node->data = data;
-    node->left = root->right = NULL;
+    printf("\n\tEnter the Node :");
+    scanf("%d", &node->data);
+    node->left = node->right = NULL;
+
     if(root == NULL){
         root = node ;
     }else{
-        while(root)){
-            if(root->left == NULL && root->right == NULL){
-                if(root->data == NULL){
+        struct BST *temporary = root;
+        while(temporary){
+            if(temporary->left == NULL && temporary->right == NULL){
+                if(temporary->data == node->data){
                     break;
-                }else if(root->data < data){
-                    root->right = node;
+                }else if(temporary->data < node->data){
+                    temporary->right = node;
                     break;
                 }else{
-                    root->left = node;
+                    temporary->left = node;
                     break;
                 }
-            }else if(root->data < data){
-                root = root->left;
-            }else if(root->data > data){
-                root = root->right;
+            }else if(temporary->data < node->data){
+                temporary = temporary->left;
+            }else if(temporary->data > node->data){
+                temporary = temporary->right;
             }
         }
     }
