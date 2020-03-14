@@ -23,6 +23,10 @@ int partition(int a[] , int p , int r){
             a[j] = temp;
         }
         else{
+        cout<<"\n\t Inside Partition :";
+        for(int i = p ; i <= r ; i++){
+            cout<<a[i]<<" ";
+        }
          return(j);
         }
     }
@@ -33,6 +37,7 @@ void quickSort(int a[] , int p , int r){
     int q;
     if(p < r){
         q = partition(a , p , r);
+
         cout<<"\n\tp = "<<p<<"\t q = "<<q;
         quickSort(a, p ,q);
         cout<<"\n\tq+1 = "<<q+1<<"\t r = "<<r;
@@ -42,7 +47,7 @@ void quickSort(int a[] , int p , int r){
 
 int main(){
     int sizeOfArray;
-    cout<<"\t*******SELECTION SORT********\n";
+    cout<<"\t*******QUICK SORT********\n";
     cout<<"\tEnter the size of the Array :";
     cin>>sizeOfArray;
     int a[sizeOfArray];

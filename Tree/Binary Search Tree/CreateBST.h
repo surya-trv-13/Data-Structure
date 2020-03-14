@@ -5,10 +5,10 @@
 
 void createBST(){
     char choice;
-    int data;
+
     do{
 
-        insertNode(root);
+        insertNode();
 
         printf("\n\t Do you want to enter more (Y/n)");
         scanf( " %c",&choice);

@@ -5,8 +5,10 @@
 
 void inorderTraversal(struct BST *node){
 
-    if(node == NULL)
+    if(node == NULL){
         return;
+    }
+
     inorderTraversal(node->left);
     printf(" %d" , node->data);
     inorderTraversal(node->right);

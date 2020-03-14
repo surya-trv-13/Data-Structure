@@ -3,7 +3,7 @@
 #include "Structure.h"
 #include <stdlib.h>
 
-void insertNode(struct BST *root){
+void insertNode(){
     struct BST *node = malloc(sizeof(struct BST));
     printf("\n\tEnter the Node :");
     scanf("%d", &node->data);
@@ -24,10 +24,14 @@ void insertNode(struct BST *root){
                     temporary->left = node;
                     break;
                 }
+            }else if(temporary->data < node->data && temporary->right == NULL){
+                temporary->right = node;
+            }else if(temporary->data > node-> data && temporary->left == NULL){
+                temporary->left = node;
             }else if(temporary->data < node->data){
-                temporary = temporary->left;
-            }else if(temporary->data > node->data){
                 temporary = temporary->right;
+            }else if(temporary->data > node->data){
+                temporary = temporary->left;
             }
         }
     }

@@ -7,6 +7,6 @@ struct BST{
     struct BST *left;
 };
 
-static struct BST *root = NULL;
+struct BST *root = NULL;
 
 #endif // STRUCTURE_H_INCLUDED

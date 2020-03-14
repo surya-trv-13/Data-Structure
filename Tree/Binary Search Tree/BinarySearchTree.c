@@ -21,7 +21,7 @@ void main(){
         scanf("%d" , &operation);
         switch(operation){
             case 1 :
-                insertNode(root);
+                insertNode();
                 break;
             case 6 :
                 printf("\n\tInOrder Traversal :");
