@@ -12,6 +12,7 @@ int findMaximum(){
             maxNode = maxNode->right;
         }
     }
+    return -1;
 }
 
 

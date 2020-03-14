@@ -5,6 +5,7 @@
 #include "InOrderTraversal.h"
 #include "FindNodeBST.h"
 #include "FindMaxBST.h"
+#include "FindMinBST.h"
 
 void main(){
     char choice;
@@ -40,6 +41,10 @@ void main(){
             case 4 :
                 res = findMaximum();
                 printf("\n\tMaximum Value in Tree is %d" , res);
+                break;
+            case 5 :
+                res = findMinimum();
+                printf("\n\tMinimum Value in Tree is %d" , res);
                 break;
             default :
                 printf("\n\tEnter the Valid Operation :");
