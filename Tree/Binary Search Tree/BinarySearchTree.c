@@ -4,6 +4,7 @@
 #include "InsertNode.h"
 #include "InOrderTraversal.h"
 #include "FindNodeBST.h"
+#include "FindMaxBST.h"
 
 void main(){
     char choice;
@@ -33,8 +34,13 @@ void main(){
                 if(res == 0){
                     printf("\n\tItem not Found");
                 }else{
-                    printf("\n\tItem found!!!");
+                    printf("\n\tItem Found!!!");
                 }
+                break;
+            case 4 :
+                res = findMaximum();
+                printf("\n\tMaximum Value in Tree is %d" , res);
+                break;
             default :
                 printf("\n\tEnter the Valid Operation :");
                 break;
