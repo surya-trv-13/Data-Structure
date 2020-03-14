@@ -3,10 +3,11 @@
 #include "Structure.h"
 #include "InsertNode.h"
 #include "InOrderTraversal.h"
+#include "FindNodeBST.h"
 
 void main(){
     char choice;
-    int operation;
+    int operation , res;
 
     createBST();
     do{
@@ -27,6 +28,13 @@ void main(){
                 printf("\n\tInOrder Traversal :");
                 inorderTraversal(root);
                 break;
+            case 3 :
+                res = findNode();
+                if(res == 0){
+                    printf("\n\tItem not Found");
+                }else{
+                    printf("\n\tItem found!!!");
+                }
             default :
                 printf("\n\tEnter the Valid Operation :");
                 break;
