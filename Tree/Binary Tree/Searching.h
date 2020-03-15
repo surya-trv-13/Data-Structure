@@ -6,11 +6,8 @@
 #include "PopStack.h"
 
 
-int SearchingNode(struct Node *node ){
+struct Node *SearchingNode(struct Node *node , int DataSearch){
     struct Node *root = node;
-    int DataSearch;
-    printf("\n\tEnter the Data you want to Search :");
-    scanf("%d" , &DataSearch);
     while(1){
         while(root != NULL){
             push(root);
@@ -19,7 +16,7 @@ int SearchingNode(struct Node *node ){
         root = pop();
         if(root){
             if(root->data == DataSearch){
-                return 1;
+                return root;
             }
         }
 
@@ -30,7 +27,7 @@ int SearchingNode(struct Node *node ){
 
         root = root->right;
     }
-    return 0;
+    return NULL;
 }
 
 

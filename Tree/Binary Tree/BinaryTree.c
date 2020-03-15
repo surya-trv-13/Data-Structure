@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include "CreateTree.h"
 #include "Structure.h"
+#include "InsertNode.h"
+#include "DeleteNode.h"
 #include "InorderTraversal.h"
 #include "PreOrderTraversal.h"
 #include "PostOrderTraversal.h"
@@ -11,13 +13,14 @@
 
 void main(){
     char choice;
-    int searchReturn;
+    struct Node *searchReturn;
+    int DataSearch;
     printf("\n\t******** Binary Tree ********");
     createTree();
 
     do{
             int ch;
-            printf("\n\n\t1. Insert Node :"
+            printf("\n\n\t1. Insert Node"
                     "\n\t2. Delete Node"
                     "\n\t3. InOrder Traversal"
                     "\n\t4. Pre-Order Traversal"
@@ -33,6 +36,7 @@ void main(){
                     insertNode();
                     break;
                 case 2 :
+                    deleteNode();
                     break;
                 case 3 :
                     printf("\n\t InOrder Traversal :");
@@ -59,8 +63,10 @@ void main(){
                     PostOrderTraversal(root);
                     break;
                 case 9 :
-                    searchReturn = SearchingNode(root);
-                    if(searchReturn == 1){
+                    printf("\n\tEnter the Data you want to Search :");
+                    scanf("%d" , &DataSearch);
+                    searchReturn = SearchingNode(root , DataSearch);
+                    if(searchReturn != NULL){
                         printf("\n\tSearch Successful !!");
                     }else{
                         printf("\n\tSearch UnsucessFul !!");
