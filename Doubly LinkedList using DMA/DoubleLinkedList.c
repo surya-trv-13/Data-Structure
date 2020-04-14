@@ -8,11 +8,21 @@
 #include "DeleteAtFront.h"
 #include "DeleteAtEnd.h"
 #include "InsertAtSpecific.h"
+#include "createCircularList.h"
+#include "printCircular.h"
 
 void main(){
         int choice;
         char want;
-        createList();
+        int premiumChoice;
+
+        printf("\n\n\tENTER YOUR CHOICE"
+               "\n\t 1. Double Linked List"
+               "\n\t 2. Circular Double LinkedList"
+               "\n\tCHOICE :");
+        scanf("%d", &premiumChoice);
+        if(premiumChoice == 1){
+            createList();
         do{
             printf("\n\t Enter you Choice :"
                 "\n\t\t1. Show the List"
@@ -46,6 +56,12 @@ void main(){
                     break;
             }
             printf("\n\t Enter Any key to do more operation (Press n to exit): ");
-            scanf("\n%c",&want);
+            scanf("%c",&want);
         }while(want != 'N' || want != 'n');
+    }else{
+       createCircularLL();
+       printCircularLL();
+    }
+
+
 }

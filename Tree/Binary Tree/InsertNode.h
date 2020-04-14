@@ -30,6 +30,7 @@ void insertNode(){
                 }
 
                 if(temp->right == NULL){
+                    printf("Called");
                     temp->right = node;
                     break;
                 }else{
